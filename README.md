@@ -27,13 +27,12 @@ Linked in URL : www.linkedin.com/in/ramyakrishnan19
 
 # Libraries for ML Process
 
-    from sklearn.preprocessing import OrdinalEncoder
-    from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
-    from sklearn.tree import DecisionTreeRegressor
-    from sklearn.ensemble import ExtraTreesRegressor
-    from sklearn.ensemble import RandomForestRegressor
-    from xgboost import XGBRegressor
-    from sklearn.model_selection import train_test_split, GridSearchCV
+    from sklearn.model_selection import train_test_split
+    from sklearn.ensemble import IsolationForest
+    from sklearn.svm import OneClassSVM
+    from sklearn.ensemble import RandomForestClassifier
+    from sklearn.ensemble import VotingClassifier
+    from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score
     import pickle
 
 # Project Overview
@@ -70,14 +69,6 @@ Outlier detection and log transformation.
 
 Correlation heatmap.
 
-## Machine Learning Model
-
-Testing with decision tree, extra tree, random forest, and XGB regressor.
-
-Selection of XGB regressor for accuracy.
-
-Saving the model with pickle.
-
 ## Streamlit Page
 
 ### Home menu:​
@@ -86,7 +77,7 @@ Provide an overview of the domain, technology used, and project.​
 
 Display relevant images.​
 
-<img width="1439" alt="Screenshot 2024-05-06 at 11 01 45 AM" src="https://github.com/Ramya19rk/Microservice-Performance-Optimization/assets/145639838/592c8269-b8ba-46df-8162-559d12528e2f">
+<img width="1440" alt="Screenshot 2024-05-06 at 2 24 30 PM" src="https://github.com/Ramya19rk/Microservice-Performance-Optimization/assets/145639838/3e696f83-101f-4b83-b597-2aa4ad7d6b17">
 
 
 ### Prediction menu:​
